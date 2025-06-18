@@ -11,7 +11,6 @@ const About = () => {
         subtitle="Learn about our mission, team, and the values that drive us to create innovative ASL translation technology."
         ctaText="Meet Our Team"
         ctaLink="#team"
-        showFeatures={false}
       />
       
       <Section

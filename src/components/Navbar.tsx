@@ -56,10 +56,10 @@ const Navbar = () => {
         {/* Try it now button on right */}
         <div className="hidden md:flex ml-auto">
           <Link
-            to="/try"
+            to="/register"
             className="bg-primary-600 text-white font-semibold px-5 py-2 rounded-md shadow hover:bg-primary-700 transition-colors"
           >
-            Try it now
+            Register for Early Access
           </Link>
         </div>
 

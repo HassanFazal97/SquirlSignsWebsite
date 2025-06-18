@@ -1,40 +1,38 @@
 import { HandHelping, Lightbulb, Users } from 'lucide-react';
 import Hero from '../components/Hero';
 import Section from '../components/Section';
-import Button from '../components/Button';
 
 const Home = () => {
   return (
     <div>
+      
       <Hero 
         title="Breaking Communication Barriers with AI-Powered ASL Translation"
         subtitle="SquirlSigns uses cutting-edge AI technology to translate American Sign Language in real-time, creating a more inclusive and accessible world for everyone."
-        ctaText="Explore Our Services"
-        ctaLink="/services"
-        secondaryCtaText="Learn About Us"
-        secondaryCtaLink="/about"
+        ctaText="Register for Early Access"
+        ctaLink="/register"
       />
       
       <Section
         title="Our Mission"
-        subtitle="At Squirl ASL, our mission is to empower communities by breaking communication barriers through the use of advanced AI technologies."
+        subtitle="At Squirl Signs, we are using advanced machine learning and AI to bridge the communication gap for deaf individuals."
         align="center"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
           <MissionCard 
             icon={<HandHelping className="w-6 h-6" />}
             title="Accessibility"
-            content="We believe communication should be accessible to everyone. Our technology bridges the gap between the deaf community and the hearing world."
+            content="We are committed to making communication truly inclusive. Our technology removes barriers by enabling seamless interaction between Deaf signers and non-signers across all industries."
           />
           <MissionCard 
             icon={<Lightbulb className="w-6 h-6" />}
             title="Innovation"
-            content="Through continuous research and development, we push the boundaries of what's possible with AI-powered sign language translation."
+            content="We harness the power of AI to redefine accessibility. Through ongoing research and development, we’re building cutting-edge tools for real-time sign language interpretation."
           />
           <MissionCard 
             icon={<Users className="w-6 h-6" />}
             title="Community"
-            content="We work closely with the deaf community to ensure our solutions address real needs and foster genuine connections."
+            content="Our work is guided by those it serves. We collaborate closely with the Deaf community to ensure our solutions are practical, respectful, and rooted in lived experience."
           />
         </div>
       </Section>
@@ -85,7 +83,7 @@ const TestimonialSection = () => (
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">What People Are Saying</h2>
         <p className="text-lg text-neutral-600 mb-12">
-          Hear from those whose lives have been changed by our technology.
+          See what those impacted by our technology have to say.
         </p>
       </div>
       
@@ -129,17 +127,17 @@ const Testimonial = ({ content, author, role }: { content: string; author: strin
 const CallToAction = () => (
   <section className="py-16 md:py-24 bg-primary-600 text-white">
     <div className="container mx-auto px-4 md:px-6 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Break Communication Barriers?</h2>
+      <h2 className="text-3xl md:text-4xl font-bold mb-6">Want to get involved?</h2>
       <p className="text-lg text-primary-100 mb-10 max-w-3xl mx-auto">
         Join us in our mission to create a more inclusive world where everyone can communicate freely, regardless of hearing ability.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
-        <Button href="/contact" variant="secondary" size="lg">
+        <a href="/contact" className="inline-block bg-white text-[#641584] font-semibold py-3 px-6 rounded-lg shadow hover:bg-purple-100 border border-[#641584] transition-colors">
           Contact Us
-        </Button>
-        <Button href="/services" variant="outline" size="lg" className="bg-transparent text-white border-white hover:bg-white/10">
-          Explore Our Services
-        </Button>
+        </a>
+        <a href="/register" className="inline-block bg-[#641584] text-white font-semibold border border-[#641584] py-3 px-6 rounded-lg hover:bg-[#4a1062] transition-colors">
+          Register for Early Access
+        </a>
       </div>
     </div>
   </section>

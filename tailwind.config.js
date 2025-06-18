@@ -11,7 +11,7 @@ export default {
           300: '#c4b5fd',
           400: '#a78bfa',
           500: '#8b5cf6',
-          600: '#6C63FF', // Our main brand purple
+          600: '#8c1bbb', // Updated to new standard purple
           700: '#5b46d6',
           800: '#4c1d95',
           900: '#2e1065',
