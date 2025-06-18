@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div>
       <Hero 
-        title="About SquirlSigns"
+        title="About Squirl Signs"
         subtitle="Learn about our mission, team, and the values that drive us to create innovative ASL translation technology."
         ctaText="Meet Our Team"
         ctaLink="#team"
@@ -20,7 +20,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg text-neutral-700 mb-6">
-              SquirlSigns began with a simple yet powerful mission: to bridge communication gaps using advanced AI technologies. Our journey started with the vision of making American Sign Language accessible to everyone.
+              Squirl Signs began with a simple yet powerful mission: to bridge communication gaps using advanced AI technologies. Our journey started with the vision of making American Sign Language accessible to everyone.
             </p>
             <p className="text-lg text-neutral-700 mb-6">
               Through dedication and innovation, we've developed cutting-edge AI technology that can accurately translate ASL in real-time, breaking down barriers between deaf and hearing communities.
@@ -32,7 +32,7 @@ const About = () => {
           <div className="rounded-xl overflow-hidden shadow-lg">
             <img 
               src="https://images.pexels.com/photos/7516363/pexels-photo-7516363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-              alt="SquirlSigns team collaborating" 
+              alt="Squirl Signs team collaborating" 
               className="w-full h-auto"
             />
           </div>
@@ -43,7 +43,7 @@ const About = () => {
       
       <Section
         title="Meet Our Team"
-        subtitle="The passionate people behind SquirlSigns"
+        subtitle="The passionate people behind Squirl Signs"
         id="team"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

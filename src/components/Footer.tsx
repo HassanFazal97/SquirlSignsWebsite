@@ -11,8 +11,8 @@ const Footer = () => {
           {/* Logo and mission */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
-              <img src="/squirl-logo.png" alt="SquirlSigns Logo" className="h-7 w-7" />
-              <span className="text-xl font-bold text-neutral-900">SquirlSigns</span>
+              <img src="/squirl-logo.png" alt="Squirl Signs Logo" className="h-7 w-7" />
+              <span className="text-xl font-bold text-neutral-900">Squirl Signs</span>
             </Link>
             <p className="text-neutral-600 mt-4 leading-relaxed">
               Breaking communication barriers with AI-powered ASL translation.
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-neutral-200 mt-12 pt-8 text-center text-neutral-600 text-sm">
-          <p>© {currentYear} SquirlSigns. All rights reserved.</p>
+          <p>© {currentYear} Squirl Signs. All rights reserved.</p>
         </div>
       </div>
     </footer>

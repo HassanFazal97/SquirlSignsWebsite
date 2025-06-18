@@ -8,7 +8,7 @@ const Home = () => {
       
       <Hero 
         title="Breaking Communication Barriers with AI-Powered ASL Translation"
-        subtitle="SquirlSigns uses cutting-edge AI technology to translate American Sign Language in real-time, creating a more inclusive and accessible world for everyone."
+        subtitle="Squirl Signs uses cutting-edge AI technology to translate American Sign Language in real-time, creating a more inclusive and accessible world for everyone."
         ctaText="Register for Early Access"
         ctaLink="/register"
       />
@@ -61,7 +61,7 @@ const VideoSection = () => (
   <section className="py-16 md:py-24 bg-neutral-50">
     <div className="container mx-auto px-4 md:px-6">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">See SquirlSigns in Action</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">See Squirl Signs in Action</h2>
         <p className="text-lg text-neutral-600 mb-10">
           Watch how our technology translates ASL in real-time, making communication seamless and accessible.
         </p>

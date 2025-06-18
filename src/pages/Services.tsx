@@ -11,7 +11,6 @@ const Services = () => {
         subtitle="Discover how our AI-powered technology is breaking communication barriers and creating a more inclusive world."
         ctaText="Contact Us"
         ctaLink="/contact"
-        showFeatures={false}
       />
       
       <Section
@@ -22,7 +21,7 @@ const Services = () => {
           <ServiceCard 
             title="Real-time ASL Translation"
             description="Our core technology converts American Sign Language to text instantly, enabling seamless communication between deaf and hearing individuals."
-            icon={<img src="/squirl-logo.png" alt="SquirlSigns Logo" className="w-6 h-6" />}
+            icon={<img src="/squirl-logo.png" alt="Squirl Signs Logo" className="w-6 h-6" />}
             imageUrl="https://images.pexels.com/photos/7516362/pexels-photo-7516362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           />
           <ServiceCard 
@@ -173,8 +172,8 @@ const FaqSection = () => {
       answer: "Our AI achieves over 95% accuracy for common signs and phrases, with continual improvements through machine learning. Accuracy can vary based on signing style, lighting conditions, and the complexity of the signed content."
     },
     {
-      question: "What devices are compatible with SquirlSigns?",
-      answer: "SquirlSigns works on most modern smartphones, tablets, and computers with cameras. We support iOS, Android, Windows, and macOS through our apps and web interface."
+      question: "What devices are compatible with Squirl Signs?",
+      answer: "Squirl Signs works on most modern smartphones, tablets, and computers with cameras. We support iOS, Android, Windows, and macOS through our apps and web interface."
     },
     {
       question: "Is an internet connection required?",

@@ -11,15 +11,14 @@ const Contact = () => {
         subtitle="Have questions about our technology or services? We'd love to hear from you."
         ctaText="Contact Us Now"
         ctaLink="#contact-form"
-        showFeatures={false}
       />
       
-      <Section id="contact-form">
+      <Section title="Contact Us" id="contact-form">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-3xl font-bold text-neutral-900 mb-6">Contact Information</h2>
             <p className="text-lg text-neutral-600 mb-8">
-              Fill out the form and our team will get back to you within 24 hours. We're here to answer any questions you have about SquirlSigns.
+              Fill out the form and our team will get back to you within 24 hours. We're here to answer any questions you have about Squirl Signs.
             </p>
             
             <div className="space-y-6 mb-10">
@@ -114,7 +113,7 @@ const FAQSection = () => {
     },
     {
       question: "Do you offer demos of your technology?",
-      answer: "Yes, we provide live demonstrations of SquirlSigns. Please request a demo in your message and our team will arrange a suitable time."
+      answer: "Yes, we provide live demonstrations of Squirl Signs. Please request a demo in your message and our team will arrange a suitable time."
     },
     {
       question: "Can I schedule a meeting with your team?",
