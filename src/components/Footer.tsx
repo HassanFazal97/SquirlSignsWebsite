@@ -61,12 +61,12 @@ const Footer = () => {
               </li>
             </ul>
             <div className="mt-6">
-              <Link 
-                to="/contact" 
+              <a 
+                href="/contact" 
                 className="px-5 py-2.5 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition inline-block"
               >
                 Get in Touch
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -46,7 +46,8 @@ const About = () => {
         subtitle="The passionate people behind Squirl Signs"
         id="team"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Leadership Row: Project Director & CFO */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 justify-center items-center mx-auto" style={{maxWidth: '900px'}}>
           <TeamMember 
             name="Shehriyar Nasri"
             role="Project Director"
@@ -58,10 +59,24 @@ const About = () => {
             ]}
           />
           <TeamMember 
-            name="Pranshu Sharma"
+            name="Luna"
+            role="Chief Operating Officer (COO)"
+            bio="Managing daily operations and ensuring sustainable growth."
+            imageUrl="/luna.jpg"
+            socialLinks={[
+              { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
+              { type: 'twitter', url: 'https://twitter.com' },
+            ]}
+          />
+        </div>
+
+        {/* VP Row */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <TeamMember 
+            name="TBD"
             role="VP Engineering"
             bio="Overseeing the development of our core AI translation technology."
-            imageUrl="/Pranshu.jpg"
+            imageUrl=""
             socialLinks={[
               { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
               { type: 'twitter', url: 'https://twitter.com' },
@@ -87,6 +102,11 @@ const About = () => {
               { type: 'twitter', url: 'https://twitter.com' },
             ]}
           />
+        </div>
+
+        {/* Engineering Department */}
+        <h3 className="text-2xl font-bold text-neutral-900 mb-4 mt-8">Engineering</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <TeamMember 
             name="Fredrick Pu"
             role="ML Engineer"
@@ -99,7 +119,7 @@ const About = () => {
           />
           <TeamMember 
             name="Fazal Hassan"
-            role="Software Developer"
+            role="Software Engineer"
             bio="Building robust and scalable solutions for our translation platform."
             imageUrl="/Fazal.jpg"
             socialLinks={[
@@ -108,20 +128,25 @@ const About = () => {
             ]}
           />
           <TeamMember 
-            name="New Member 1"
-            role="UX Designer"
-            bio="Creating intuitive and user-friendly designs for our platform."
-            imageUrl="/NewMember1.jpg"
+            name="Shubhkarman Pruthi"
+            role="Software Engineer"
+            bio="Analyzing data to improve our AI models and translation accuracy."
+            imageUrl="/shubh.jpg"
             socialLinks={[
               { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
               { type: 'twitter', url: 'https://twitter.com' },
             ]}
           />
+        </div>
+
+        {/* Marketing Department */}
+        <h3 className="text-2xl font-bold text-neutral-900 mb-4 mt-8">Marketing</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <TeamMember 
-            name="New Member 2"
-            role="Data Scientist"
-            bio="Analyzing data to improve our AI models and translation accuracy."
-            imageUrl="/NewMember2.jpg"
+            name="Danial"
+            role="UX Designer"
+            bio="Creating intuitive and user-friendly designs for our platform."
+            imageUrl="/Danial.jpg"
             socialLinks={[
               { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
               { type: 'twitter', url: 'https://twitter.com' },
@@ -138,6 +163,8 @@ const About = () => {
             ]}
           />
         </div>
+
+        {/* Research Department (if you want to add more members, add here) */}
       </Section>
       
       <JoinUsSection />
