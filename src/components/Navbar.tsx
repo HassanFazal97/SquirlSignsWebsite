@@ -38,23 +38,10 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center">
-        {/* Mobile menu button on left */}
-        <button 
-          className="md:hidden mr-3 focus:outline-none" 
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? (
-            <X className="h-6 w-6 text-neutral-900" />
-          ) : (
-            <Menu className="h-6 w-6 text-neutral-900" />
-          )}
-        </button>
         <Link to="/" className="flex items-center space-x-2">
           <img src="/squirl-logo.png" alt="Squirl Signs Logo" className="h-8 w-8" />
           <span className="text-xl font-bold text-neutral-900">Squirl Signs</span>
         </Link>
-
         {/* Desktop Menu Centered */}
         <div className="hidden md:flex flex-1 justify-center">
           <div className="flex space-x-8">
@@ -64,7 +51,6 @@ const Navbar = () => {
             <NavLink to="/contact" active={isActive('/contact')}>Contact</NavLink>
           </div>
         </div>
-
         {/* Try it now button on right */}
         <div className="hidden md:flex ml-auto">
           <Link
@@ -74,6 +60,18 @@ const Navbar = () => {
             Register for Early Access
           </Link>
         </div>
+        {/* Mobile menu button on right */}
+        <button 
+          className="md:hidden ml-auto focus:outline-none" 
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          {isOpen ? (
+            <X className="h-6 w-6 text-neutral-900" />
+          ) : (
+            <Menu className="h-6 w-6 text-neutral-900" />
+          )}
+        </button>
       </div>
 
       {/* Mobile Menu */}
