@@ -9,12 +9,17 @@ const About = () => {
       <Hero 
         title="About Squirl Signs"
         subtitle="Learn about us and what drives us to innovate and break barriers."
-        ctaText="Meet Our Team"
-        ctaLink="#team"
+        ctaText="Story"
+        ctaLink="#our-story"
+        secondaryCtaText="Values"
+        secondaryCtaLink="#our-values"
+        tertiaryCtaText="Team"
+        tertiaryCtaLink="#team"
       />      
       <Section
         title="Our Story"
         align="left"
+        id="our-story"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -170,7 +175,7 @@ const ValuesSection = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-neutral-50">
+    <section className="py-16 md:py-24 bg-neutral-50" id="our-values">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Our Values</h2>

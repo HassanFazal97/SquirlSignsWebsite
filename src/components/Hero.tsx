@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 import Button from './Button';
 
 type HeroProps = {
@@ -8,6 +9,8 @@ type HeroProps = {
   ctaLink: string;
   secondaryCtaText?: string;
   secondaryCtaLink?: string;
+  tertiaryCtaText?: string; // Added for third button
+  tertiaryCtaLink?: string; // Added for third button
   showImage?: boolean;
 };
 
@@ -18,8 +21,18 @@ const Hero = ({
   ctaLink,
   secondaryCtaText,
   secondaryCtaLink,
+  tertiaryCtaText,
+  tertiaryCtaLink,
   showImage = false,
 }: HeroProps) => {
+  const [hash, setHash] = useState(() => window.location.hash);
+
+  useEffect(() => {
+    const onHashChange = () => setHash(window.location.hash);
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: (i: number) => ({
@@ -33,7 +46,7 @@ const Hero = ({
   };
 
   return (
-    <section className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
+    <section key={hash} className="relative pt-28 pb-20 md:pt-36 md:pb-28 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary-50 to-transparent pointer-events-none" />
       <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -49,7 +62,7 @@ const Hero = ({
               {title}
             </motion.h1>
             <motion.p
-              className="mt-6 text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed"
+              className="mt-6 text-lg md:text-xl text-neutral-700 max-w-2xl mx-auto whitespace-nowrap md:whitespace-normal"
               custom={2}
               initial="hidden"
               animate="visible"
@@ -74,11 +87,19 @@ const Hero = ({
               {secondaryCtaText && secondaryCtaLink && (
                 <Button
                   href={secondaryCtaLink}
-                  variant="outline"
                   size="lg"
-                  className="transition-colors bg-white text-[#641584] font-semibold border border-[#641584] rounded-lg shadow hover:bg-purple-100 focus:bg-purple-100 focus:ring-2 focus:ring-[#641584] focus:ring-offset-2"
+                  className="transition-colors bg-[#641584] text-white font-semibold border border-[#641584] rounded-lg shadow hover:bg-[#4a1062] focus:bg-[#4a1062] focus:ring-2 focus:ring-[#641584] focus:ring-offset-2"
                 >
                   {secondaryCtaText}
+                </Button>
+              )}
+              {tertiaryCtaText && tertiaryCtaLink && (
+                <Button
+                  href={tertiaryCtaLink}
+                  size="lg"
+                  className="transition-colors bg-[#641584] text-white font-semibold border border-[#641584] rounded-lg shadow hover:bg-[#4a1062] focus:bg-[#4a1062] focus:ring-2 focus:ring-[#641584] focus:ring-offset-2"
+                >
+                  {tertiaryCtaText}
                 </Button>
               )}
             </motion.div>
