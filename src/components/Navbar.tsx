@@ -38,6 +38,18 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center">
+        {/* Mobile menu button on left */}
+        <button 
+          className="md:hidden mr-3 focus:outline-none" 
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          {isOpen ? (
+            <X className="h-6 w-6 text-neutral-900" />
+          ) : (
+            <Menu className="h-6 w-6 text-neutral-900" />
+          )}
+        </button>
         <Link to="/" className="flex items-center space-x-2">
           <img src="/squirl-logo.png" alt="Squirl Signs Logo" className="h-8 w-8" />
           <span className="text-xl font-bold text-neutral-900">Squirl Signs</span>
@@ -62,19 +74,6 @@ const Navbar = () => {
             Register for Early Access
           </Link>
         </div>
-
-        {/* Mobile menu button */}
-        <button 
-          className="md:hidden focus:outline-none" 
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? (
-            <X className="h-6 w-6 text-neutral-900" />
-          ) : (
-            <Menu className="h-6 w-6 text-neutral-900" />
-          )}
-        </button>
       </div>
 
       {/* Mobile Menu */}
