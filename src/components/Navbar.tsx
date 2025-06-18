@@ -48,7 +48,7 @@ const Navbar = () => {
           <div className="flex space-x-8">
             {/* Removed Home NavLink */}
             <NavLink to="/about" active={isActive('/about')}>About Us</NavLink>
-            <NavLink to="/services" active={isActive('/services')}>What We Do</NavLink>
+            <NavLink to="/services" active={isActive('/services')}>Our Services</NavLink>
             <NavLink to="/contact" active={isActive('/contact')}>Contact</NavLink>
           </div>
         </div>

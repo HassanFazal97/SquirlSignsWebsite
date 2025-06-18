@@ -7,7 +7,6 @@ const Register = () => {
     name: '',
     email: '',
     organization: '',
-    message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -31,12 +30,12 @@ const Register = () => {
           name: formData.name,
           email: formData.email,
           subject: 'Register for Early Access',
-          message: `Organization: ${formData.organization}\nWhy do you want to try Squirl Signs?: ${formData.message}`,
+          message: `Organization: ${formData.organization}`,
         }),
       });
       if (response.ok) {
         setSubmitted(true);
-        setFormData({ name: '', email: '', organization: '', message: '' });
+        setFormData({ name: '', email: '', organization: '' });
       } else {
         setError('Failed to send registration. Please try again.');
       }
@@ -47,8 +46,10 @@ const Register = () => {
   };
 
   return (
-    <Section title="Join the Waitlist" id="register-form">
-      <div className="max-w-lg mx-auto">
+    <Section title="Join the Waitlist" id="register-form" className="relative overflow-hidden">
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary-50 to-transparent pointer-events-none z-0" />
+      <div className="max-w-lg mx-auto relative z-10">
         <h2 className="text-3xl font-bold text-neutral-900 mb-4 text-center">Be the First to Try Squirl Signs</h2>
         <p className="text-lg text-neutral-600 mb-8 text-center">
           Sign up for our early access waitlist and we'll notify you as soon as Squirl Signs is available to try. We're excited to have you join our community!
