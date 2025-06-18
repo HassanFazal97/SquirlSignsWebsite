@@ -64,11 +64,20 @@ const Hero = ({
               animate="visible"
               variants={fadeIn}
             >
-              <Button href={ctaLink} size="lg">
+              <Button
+                href={ctaLink}
+                size="lg"
+                className="transition-colors bg-[#641584] text-white font-semibold border border-[#641584] rounded-lg shadow hover:bg-[#4a1062] focus:bg-[#4a1062] focus:ring-2 focus:ring-[#641584] focus:ring-offset-2"
+              >
                 {ctaText}
               </Button>
               {secondaryCtaText && secondaryCtaLink && (
-                <Button href={secondaryCtaLink} variant="outline" size="lg">
+                <Button
+                  href={secondaryCtaLink}
+                  variant="outline"
+                  size="lg"
+                  className="transition-colors bg-white text-[#641584] font-semibold border border-[#641584] rounded-lg shadow hover:bg-purple-100 focus:bg-purple-100 focus:ring-2 focus:ring-[#641584] focus:ring-offset-2"
+                >
                   {secondaryCtaText}
                 </Button>
               )}
