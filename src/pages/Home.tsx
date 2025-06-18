@@ -68,7 +68,7 @@ const VideoSection = () => (
         </p>
       </div>
       
-      <div className="max-w-5xl mx-auto bg-neutral-900 rounded-xl overflow-hidden aspect-video shadow-xl">
+      <div className="max-w-5xl mx-auto bg-neutral-900 rounded-xl overflow-hidden shadow-xl" style={{ aspectRatio: '1538/1078' }}>
         <video className="w-full h-full" controls>
           <source src="/squirl-demo.mp4" type="video/mp4" />
           Your browser does not support the video tag.

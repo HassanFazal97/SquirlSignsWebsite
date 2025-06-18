@@ -25,14 +25,14 @@ const Contact = () => {
               <ContactInfo 
                 icon={<Mail className="w-6 h-6" />}
                 title="Email Us"
-                content="squirl.enactusutm@gmail.com"
-                href="mailto:squirl.enactusutm@gmail.com"
+                content="squirl@squirlasl.ca"
+                href="mailto:squirl@squirlasl.ca"
               />
               <ContactInfo 
                 icon={<Phone className="w-6 h-6" />}
                 title="Call Us"
-                content="+1 (234) 567-8910"
-                href="tel:+12345678910"
+                content="+1 (437)-236-6064"
+                href="tel:+14372366064"
               />
               <ContactInfo 
                 icon={<MapPin className="w-6 h-6" />}

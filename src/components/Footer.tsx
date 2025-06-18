@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin, Mail } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,7 +15,7 @@ const Footer = () => {
               <span className="text-xl font-bold text-neutral-900">Squirl Signs</span>
             </Link>
             <p className="text-neutral-600 mt-4 leading-relaxed">
-              Breaking communication barriers with AI-powered ASL translation.
+              Bridging communication gaps with AI-powered ASL translation.
             </p>
             <div className="flex space-x-4 mt-6">
               <SocialIcon icon={<Facebook size={20} />} href="https://facebook.com" />
@@ -53,7 +53,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3 text-neutral-600">
                 <Mail size={20} className="text-primary-600 mt-0.5 flex-shrink-0" />
-                <span>squirl.enactusutm@gmail.com</span>
+                <span>squirl@squirlasl.ca</span>
+              </li>
+              <li className="flex items-start space-x-3 text-neutral-600">
+                <Phone size={20} className="text-primary-600 mt-0.5 flex-shrink-0" />
+                <span>437-236-6064</span>
               </li>
             </ul>
             <div className="mt-6">
@@ -68,7 +72,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-neutral-200 mt-12 pt-8 text-center text-neutral-600 text-sm">
-          <p>© {currentYear} Squirl Signs. All rights reserved.</p>
+          <p>© {currentYear} Squirl Signs Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>
