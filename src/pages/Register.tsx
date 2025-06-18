@@ -30,7 +30,7 @@ const Register = () => {
           name: formData.name,
           email: formData.email,
           subject: 'Register for Early Access',
-          message: `Organization: ${formData.organization}`,
+          message: `I would like to register for early access. Organization: ${formData.organization}`,
         }),
       });
       if (response.ok) {
