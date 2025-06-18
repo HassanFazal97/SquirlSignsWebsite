@@ -91,19 +91,19 @@ const TestimonialSection = () => (
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <Testimonial 
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          author="John Doe"
-          role="Placeholder Role"
+          content="This technology has the potential in order to promote communication. It would enable me to communicate with hearing people in my community without constantly using texting or interpreters"
+          author="Yi Tjuhanda"
+          role="Student, University of Toronto"
         />
         <Testimonial 
-          content="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          author="Jane Doe"
-          role="Placeholder Role"
+          content="AI-driven audio-to-sign translation would be an absolute game changer because real-time information is often inaccessible to Deaf people. Right now, they rely on text, but English isn’t their first language—it’s not the best solution for many of them."
+          author="Dr. Nathan Sanders"
+          role="Professor, University of Toronto"
         />
         <Testimonial 
-          content="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-          author="John Doe"
-          role="Placeholder Role"
+          content="Things that are helpful are helpful... It would be great if there was a solution. For groceries, train, the bank, and more, this may be well-embraced"
+          author="Kelly MacKenzie"
+          role="Executive Director, Silent Voice Canada"
         />
       </div>
     </div>
