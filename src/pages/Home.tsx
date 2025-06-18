@@ -11,6 +11,7 @@ const Home = () => {
         subtitle="Squirl Signs uses cutting-edge AI technology to translate American Sign Language in real-time, creating a more inclusive and accessible world for everyone."
         ctaText="Register for Early Access"
         ctaLink="/register"
+        showImage={true}
       />
       
       <Section
@@ -69,7 +70,7 @@ const VideoSection = () => (
       
       <div className="max-w-5xl mx-auto bg-neutral-900 rounded-xl overflow-hidden aspect-video shadow-xl">
         <video className="w-full h-full" controls>
-          <source src="/demo-video.mp4" type="video/mp4" />
+          <source src="/squirl-demo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

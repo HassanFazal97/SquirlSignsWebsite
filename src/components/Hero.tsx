@@ -8,6 +8,7 @@ type HeroProps = {
   ctaLink: string;
   secondaryCtaText?: string;
   secondaryCtaLink?: string;
+  showImage?: boolean;
 };
 
 const Hero = ({
@@ -17,6 +18,7 @@ const Hero = ({
   ctaLink,
   secondaryCtaText,
   secondaryCtaLink,
+  showImage = false,
 }: HeroProps) => {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -72,13 +74,15 @@ const Hero = ({
               )}
             </motion.div>
           </div>
-          <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0">
-            <img
-              src="/SquirlSignsHomePageImg.jpeg"
-              alt="Two people communicating in sign language"
-              className="rounded-xl shadow-2xl w-full max-w-md object-cover"
-            />
-          </div>
+          {showImage && (
+            <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0">
+              <img
+                src="/SquirlSignsHomePageImg.jpeg"
+                alt="Two people communicating in sign language"
+                className="rounded-xl shadow-2xl w-full max-w-md object-cover"
+              />
+            </div>
+          )}
         </div>
       </div>
     </section>
