@@ -7,7 +7,21 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, email, subject, message } = req.body;
+  // Ensure body is parsed (Vercel should do this, but add fallback for safety)
+  let body = req.body;
+  if (!body || typeof body !== 'object') {
+    try {
+      body = JSON.parse(req.body);
+    } catch {
+      return res.status(400).json({ error: 'Invalid JSON body' });
+    }
+  }
+
+  const { name, email, subject, message } = body || {};
+
+  if (!name || !email || !subject || !message) {
+    return res.status(400).json({ error: 'Missing required fields' });
+  }
 
   try {
     await resend.emails.send({

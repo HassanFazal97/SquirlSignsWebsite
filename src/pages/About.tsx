@@ -8,11 +8,10 @@ const About = () => {
     <div>
       <Hero 
         title="About Squirl Signs"
-        subtitle="Learn about our mission, team, and the values that drive us to create innovative ASL translation technology."
+        subtitle="Learn about us and what drives us to innovate and break barriers."
         ctaText="Meet Our Team"
         ctaLink="#team"
-      />
-      
+      />      
       <Section
         title="Our Story"
         align="left"
@@ -20,13 +19,24 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg text-neutral-700 mb-6">
-              Squirl Signs began with a simple yet powerful mission: to bridge communication gaps using advanced AI technologies. Our journey started with the vision of making American Sign Language accessible to everyone.
+              Squirl Signs began with a simple observation: despite living in a world filled with smart
+              technology, communication remains a daily barrier for millions in the Deaf community. As
+              students and young professionals, we saw firsthand how inaccessible everyday services like visiting the doctor, applying for a job, or even ordering coffee could be for sign language users.
+              We realized that these challenges weren’t due to a lack of intelligence or capability, but a lack of
+              inclusive design. 
             </p>
             <p className="text-lg text-neutral-700 mb-6">
-              Through dedication and innovation, we've developed cutting-edge AI technology that can accurately translate ASL in real-time, breaking down barriers between deaf and hearing communities.
+              What started as a small idea quickly became a mission. We teamed up with members of the
+              Deaf and hard-of-hearing community, accessibility advocates, and tech developers to explore
+              how AI could help bridge the gap. Instead of relying on interpreters or written notes, we
+              envisioned a world where Deaf individuals could communicate naturally through sign language
+              and be instantly understood.
             </p>
             <p className="text-lg text-neutral-700">
-              Today, we're a diverse team of engineers, researchers, and marketing professionals working together to create a more inclusive world where communication knows no bounds.
+              Squirl ASL is more than a product. It’s a response to years of exclusion, a belief that
+              accessibility should be embedded into the foundation of every system, not treated as an
+              afterthought. Our journey is still unfolding, but every step is guided by a deep commitment to
+              equity, innovation, and respect for the communities we serve.
             </p>
           </div>
           <div className="rounded-xl overflow-hidden shadow-lg">
@@ -43,128 +53,90 @@ const About = () => {
       
       <Section
         title="Meet Our Team"
-        subtitle="The passionate people behind Squirl Signs"
+        subtitle="The people behind Squirl Signs"
         id="team"
       >
-        {/* Leadership Row: Project Director & CFO */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 justify-center items-center mx-auto" style={{maxWidth: '900px'}}>
+        {/* CEO/Founder centered above the rest */}
+        <div className="flex justify-center mb-12">
+          <div style={{maxWidth: '340px', width: '100%'}}>
+            <TeamMember 
+              name="Shehriyar Nasri"
+              role="CEO / Founder"
+              bio=""
+              imageUrl="/Shehriyar.jpg"
+              socialLinks={[
+                { type: 'linkedin', url: 'https://www.linkedin.com/in/shehriyar-nasri/' },
+                { type: 'twitter', url: 'https://twitter.com' },
+              ]}
+            />
+          </div>
+        </div>
+        {/* Rest of the team in a grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-start mx-auto" style={{maxWidth: '1000px'}}>
           <TeamMember 
-            name="Shehriyar Nasri"
-            role="Project Director"
-            bio="Leading our vision and strategy to create innovative ASL translation solutions."
-            imageUrl="/Shehriyar.jpg"
+            name="Fiona Hanasavha"
+            role="Head of Research"
+            bio=""
+            imageUrl="/Fiona.jpg"
             socialLinks={[
               { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
-              { type: 'twitter', url: 'https://twitter.com' },
             ]}
           />
           <TeamMember 
-            name="Luna"
-            role="Chief Operating Officer (COO)"
-            bio="Managing daily operations and ensuring sustainable growth."
+            name="Luna Alkabra"
+            role="Head of Growth and Strategy"
+            bio=""
             imageUrl="/luna.jpg"
             socialLinks={[
-              { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
-              { type: 'twitter', url: 'https://twitter.com' },
-            ]}
-          />
-        </div>
-
-        {/* VP Row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          <TeamMember 
-            name="TBD"
-            role="VP Engineering"
-            bio="Overseeing the development of our core AI translation technology."
-            imageUrl=""
-            socialLinks={[
-              { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
-              { type: 'twitter', url: 'https://twitter.com' },
+              { type: 'linkedin', url: 'https://www.linkedin.com/in/luna-alkabra/' },
             ]}
           />
           <TeamMember 
             name="Arooba Baig"
-            role="VP Marketing"
-            bio="Leading our marketing initiatives and community engagement efforts."
+            role="Head of Marketing"
+            bio=""
             imageUrl="/Arooba.jpg"
             socialLinks={[
-              { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
-              { type: 'twitter', url: 'https://twitter.com' },
+              { type: 'linkedin', url: 'https://www.linkedin.com/in/arooba-baig-665723215/' },
             ]}
           />
           <TeamMember 
-            name="Fiona"
-            role="VP Research"
-            bio="Driving innovation in ASL translation technology through research and development."
-            imageUrl="/Fiona.jpg"
+            name="Ekaf Eman"
+            role="Lead ML Engineer"
+            bio=""
+            imageUrl="/Ekaf.jpg"
             socialLinks={[
               { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
-              { type: 'twitter', url: 'https://twitter.com' },
-            ]}
-          />
-        </div>
-
-        {/* Engineering Department */}
-        <h3 className="text-2xl font-bold text-neutral-900 mb-4 mt-8">Engineering</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          <TeamMember 
-            name="Fredrick Pu"
-            role="ML Engineer"
-            bio="Developing advanced machine learning models for ASL translation."
-            imageUrl="/freddy.jpg"
-            socialLinks={[
-              { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
-              { type: 'twitter', url: 'https://twitter.com' },
-            ]}
-          />
-          <TeamMember 
-            name="Fazal Hassan"
-            role="Software Engineer"
-            bio="Building robust and scalable solutions for our translation platform."
-            imageUrl="/Fazal.jpg"
-            socialLinks={[
-              { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
-              { type: 'twitter', url: 'https://twitter.com' },
             ]}
           />
           <TeamMember 
             name="Shubhkarman Pruthi"
-            role="Software Engineer"
-            bio="Analyzing data to improve our AI models and translation accuracy."
+            role="Frontend Developer"
+            bio=""
             imageUrl="/shubh.jpg"
             socialLinks={[
-              { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
-              { type: 'twitter', url: 'https://twitter.com' },
+              { type: 'linkedin', url: 'https://www.linkedin.com/in/shubh-pruthi/' },
             ]}
           />
-        </div>
-
-        {/* Marketing Department */}
-        <h3 className="text-2xl font-bold text-neutral-900 mb-4 mt-8">Marketing</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <TeamMember 
-            name="Danial"
-            role="UX Designer"
-            bio="Creating intuitive and user-friendly designs for our platform."
-            imageUrl="/Danial.jpg"
+            name="Fazal Hassan"
+            role="Ux Designer/ Backend Developer"
+            bio=""
+            imageUrl="/Fazal.jpg"
             socialLinks={[
-              { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
-              { type: 'twitter', url: 'https://twitter.com' },
+              { type: 'linkedin', url: 'https://www.linkedin.com/in/fazal-hassan/' },
             ]}
           />
           <TeamMember 
-            name="New Member 3"
-            role="Community Manager"
-            bio="Engaging with our community to gather feedback and build relationships."
+            name="Rima Aboal Way"
+            role="Strategic Operations Associate"
+            bio=""
             imageUrl="/NewMember3.jpg"
             socialLinks={[
-              { type: 'linkedin', url: 'https://www.linkedin.com/company/squirl-signs/' },
-              { type: 'twitter', url: 'https://twitter.com' },
+              { type: 'linkedin', url: 'https://www.linkedin.com/in/rima-aboal-way-100085224/?originalSubdomain=ca' },
             ]}
           />
         </div>
-
-        {/* Research Department (if you want to add more members, add here) */}
       </Section>
       
       <JoinUsSection />
@@ -178,22 +150,22 @@ const ValuesSection = () => {
     {
       icon: <Heart className="w-7 h-7" />,
       title: "Accessibility",
-      description: "We believe technology should be accessible to everyone, regardless of ability. This core value drives every decision we make."
+      description: "We are committed to designing technology that is inclusive and usable by all individuals, regardless of ability. Accessibility is at the heart of every decision we make."
     },
     {
       icon: <ShieldCheck className="w-7 h-7" />,
       title: "Trust",
-      description: "We build trustworthy technology through transparency, privacy protection, and ongoing engagement with the community we serve."
+      description: "Our technology is built on a foundation of transparency, data privacy, and meaningful community collaboration to earn and maintain trust."
     },
     {
       icon: <Activity className="w-7 h-7" />,
       title: "Innovation",
-      description: "We're constantly pushing the boundaries of what's possible with AI and sign language translation technology."
+      description: "We continuously explore what’s possible, using AI and sign language translation to redefine how people communicate across barriers."
     },
     {
       icon: <Lightbulb className="w-7 h-7" />,
       title: "Empathy",
-      description: "We approach our work with deep empathy for the communities we serve, ensuring our solutions address real human needs."
+      description: "We lead with empathy. We listen deeply to the communities we serve to create solutions that reflect real needs and lived experiences."
     },
   ];
 
