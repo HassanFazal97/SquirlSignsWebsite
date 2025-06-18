@@ -37,18 +37,30 @@ const Navbar = () => {
         scrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
       }`}
     >
-      <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
+      <div className="container mx-auto px-4 md:px-6 flex items-center">
         <Link to="/" className="flex items-center space-x-2">
           <img src="/squirl-logo.png" alt="SquirlSigns Logo" className="h-8 w-8" />
           <span className="text-xl font-bold text-neutral-900">SquirlSigns</span>
         </Link>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-8">
-          <NavLink to="/" active={isActive('/')}>Home</NavLink>
-          <NavLink to="/about" active={isActive('/about')}>About Us</NavLink>
-          <NavLink to="/services" active={isActive('/services')}>What We Do</NavLink>
-          <NavLink to="/contact" active={isActive('/contact')}>Contact</NavLink>
+        {/* Desktop Menu Centered */}
+        <div className="hidden md:flex flex-1 justify-center">
+          <div className="flex space-x-8">
+            {/* Removed Home NavLink */}
+            <NavLink to="/about" active={isActive('/about')}>About Us</NavLink>
+            <NavLink to="/services" active={isActive('/services')}>What We Do</NavLink>
+            <NavLink to="/contact" active={isActive('/contact')}>Contact</NavLink>
+          </div>
+        </div>
+
+        {/* Try it now button on right */}
+        <div className="hidden md:flex ml-auto">
+          <Link
+            to="/try"
+            className="bg-primary-600 text-white font-semibold px-5 py-2 rounded-md shadow hover:bg-primary-700 transition-colors"
+          >
+            Try it now
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -74,7 +86,7 @@ const Navbar = () => {
           exit={{ opacity: 0, height: 0 }}
         >
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <MobileNavLink to="/" active={isActive('/')}>Home</MobileNavLink>
+            {/* Removed Home MobileNavLink */}
             <MobileNavLink to="/about" active={isActive('/about')}>About Us</MobileNavLink>
             <MobileNavLink to="/services" active={isActive('/services')}>What We Do</MobileNavLink>
             <MobileNavLink to="/contact" active={isActive('/contact')}>Contact</MobileNavLink>
