@@ -51,7 +51,7 @@ const Hero = ({
       <div className="absolute inset-0 bg-gradient-to-b from-primary-50 to-transparent pointer-events-none" />
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-          <div className="w-full md:w-1/2 max-w-4xl text-center mx-auto">
+          <div className="w-full md:w-[85%] max-w-3xl text-center mx-auto">
             <motion.h1
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight"
               custom={1}
@@ -62,7 +62,7 @@ const Hero = ({
               {title}
             </motion.h1>
             <motion.p
-              className="mt-6 text-lg md:text-xl text-neutral-700 max-w-2xl mx-auto whitespace-nowrap md:whitespace-normal"
+              className="mt-6 text-lg md:text-xl text-neutral-700 mx-auto"
               custom={2}
               initial="hidden"
               animate="visible"
@@ -105,11 +105,11 @@ const Hero = ({
             </motion.div>
           </div>
           {showImage && (
-            <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0">
+            <div className="w-full md:w-3/4 lg:w-2/3 flex justify-center md:justify-end mt-10 md:mt-0">
               <img
                 src="/SquirlSignsHomePageImg.jpeg"
                 alt="Two people communicating in sign language"
-                className="rounded-xl shadow-2xl w-full max-w-md object-cover"
+                className="rounded-xl shadow-2xl w-full max-w-xl object-cover"
               />
             </div>
           )}

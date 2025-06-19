@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       
       <Hero 
-        title="Breaking Communication Barriers with AI-Powered ASL Translation"
+        title="Bridging Communication Gaps with AI-Powered ASL Translation"
         subtitle="Squirl Signs uses cutting-edge AI technology to translate American Sign Language in real-time, creating a more inclusive and accessible world for everyone."
         ctaText="Register for Early Access"
         ctaLink="/register"

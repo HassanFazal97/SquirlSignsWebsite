@@ -45,7 +45,7 @@ const Navbar = () => {
         {/* Desktop Menu Centered */}
         <div className="hidden md:flex flex-1 justify-center">
           <div className="flex space-x-8">
-            {/* Removed Home NavLink */}
+            <NavLink to="/" active={isActive('/')}>Home</NavLink>
             <NavLink to="/about" active={isActive('/about')}>About Us</NavLink>
             <NavLink to="/services" active={isActive('/services')}>Our Services</NavLink>
             <NavLink to="/contact" active={isActive('/contact')}>Contact</NavLink>
@@ -83,9 +83,9 @@ const Navbar = () => {
           exit={{ opacity: 0, height: 0 }}
         >
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            {/* Removed Home MobileNavLink */}
+            <MobileNavLink to="/" active={isActive('/')}>Home</MobileNavLink>
             <MobileNavLink to="/about" active={isActive('/about')}>About Us</MobileNavLink>
-            <MobileNavLink to="/services" active={isActive('/services')}>What We Do</MobileNavLink>
+            <MobileNavLink to="/services" active={isActive('/services')}>Our Services</MobileNavLink>
             <MobileNavLink to="/contact" active={isActive('/contact')}>Contact</MobileNavLink>
           </div>
         </motion.div>
