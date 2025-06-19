@@ -37,7 +37,7 @@ const Contact = () => {
               <ContactInfo 
                 icon={<MapPin className="w-6 h-6" />}
                 title="Visit Us"
-                content="123 Mississauga Rd, Mississauga, ON L5B 2C9"
+                content="3359 Mississauga Rd, Mississauga, ON L5L 1C6"
                 href="https://maps.google.com"
               />
             </div>

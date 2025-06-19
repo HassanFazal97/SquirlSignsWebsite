@@ -70,8 +70,7 @@ const About = () => {
               bio=""
               imageUrl="/Shehriyar.jpg"
               socialLinks={[
-                { type: 'linkedin', url: 'https://www.linkedin.com/in/shehriyar-nasri/' },
-                { type: 'twitter', url: 'https://twitter.com' },
+                { type: 'linkedin', url: 'https://www.linkedin.com/in/shehriyar-nasri/' }
               ]}
             />
           </div>
