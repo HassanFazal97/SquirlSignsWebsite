@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react'; // Removed HandMetal
+import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
@@ -30,6 +30,11 @@ const Navbar = () => {
   }, [location.pathname]);
 
   const isActive = (path: string) => location.pathname === path;
+
+  // Scroll to top on navigation
+  function scrollToTop() {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }
 
   return (
     <nav 
@@ -113,6 +118,7 @@ const MobileNavLink = ({ to, active, children }: { to: string; active: boolean; 
     className={`py-3 px-4 text-lg font-medium transition-colors hover:bg-primary-50 rounded-md ${
       active ? 'text-primary-600 bg-primary-50' : 'text-neutral-800'
     }`}
+    onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'instant' })}
   >
     {children}
   </Link>
